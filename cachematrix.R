@@ -1,8 +1,8 @@
-## Put comments here that give an overall description of what your
-## functions do
+## This function includes a pair of two functions that cache the inverse of a matrix
+## By calling this function, the costly computation caused by repeatedly computing the inverse of a matrix can be avoided.
+
 
 ## This makeCacheMatrix function creates a special "matrix" object that can cache its inverse
-
 makeCacheMatrix <- function(x = matrix()) {
         inv <- NULL        # set the inv to be NULL
         set <- function(y) {
