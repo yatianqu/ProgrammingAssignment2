@@ -10,7 +10,7 @@ makeCacheMatrix <- function(x = matrix()) {
           inv <<- NULL
         }
         get <- function() x    # return the matrix stored in the main function
-        setinv <- function(inverse) inv <<- inverse   #set the value inverse as the inverse of the matrix
+        setinv <- function(solve) inv <<- solve   #set the value inverse as the inverse of the matrix
         getinv <- function() inv    # get the inverse of the matrix
         list(set = set, get = get,  # store the four subfunctions in the main function
             setinv = setinv,
